@@ -56,30 +56,44 @@ header {
 }
 
 .project {
-	height:500px;
-	padding-left:20px;
-	padding-right:20px;
+	height:700px;
+	background-color:#dddeda;
 }
 
 .project h1 {
+	padding-top:10px;
 	font-size:40px;
 }
 
 .project p {
 	font-size:25px;
+	padding-bottom:20px;
+}
+
+.procject-area {
+	height:70%;
 }
 
 .project-box {
 	float:left;
-	width:25%;
+	width:33%;
+	padding-top:30px;
 }
 
 .project-img {
-	height:250px;
+	height:50%;
 }
 
 .project-text {
-	height:250px;
+	height:50%;
+}
+
+.project-text h2 {
+	font-size:35px;
+}
+
+.interview-wrapper {
+	background-color:#fafaf0;
 }
 
 .interview-wrapper h1 {
@@ -92,7 +106,7 @@ header {
 }
 
 .interviews {
-	height:1200px;
+	height:1050px;
 }
 
 .interview {
@@ -112,12 +126,22 @@ header {
 }
 
 .section-title {
-	padding-bottom:20px;
+	padding-bottom:10px;
+	font-size:40px;
+}
+
+.about p {
+	font-size:25px;
+	padding-bottom:10px;
 }
 
 table {
-	width:500px;
+	width:800px;
 	font-size:20px;
+}
+
+tr {
+	height:35px;
 }
 
 .tr-odd {
@@ -129,12 +153,13 @@ table {
 	color:#889eab;
 }
 
-.message {
-	padding: 30px;
+.contact {
+	padding:30px;
+	background-color:#fafa99;
 }
 
-.message-title {
-	font-size: 30px;
+.contact-title {
+	font-size:40px;
 	padding-top:20px;
 }
 
