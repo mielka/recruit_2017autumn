@@ -1,9 +1,0 @@
-@charset "utf-8";
-* { }
-
-html { font-size:14px; overflow:auto; -webkit-text-size-adjust: 100%; }
-body {
-	line-height:1.6; color:#3F1F00; overflow:hidden;
-	background:#FFFDFB;
-	font-family: "游ゴシック体", "Yu Gothic", YuGothic, "メイリオ", "Meiryo", sans-serif;
-	}
