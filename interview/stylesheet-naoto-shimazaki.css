@@ -1,0 +1,50 @@
+@charset "utf-8";
+* { }
+
+html { font-size:14px; overflow:auto; -webkit-text-size-adjust: 100%; }
+body {
+	line-height:1.6; color:#3F1F00; overflow:hidden;
+	background:#FFFDFB;
+	font-family: "游ゴシック体", "Yu Gothic", YuGothic, "メイリオ", "Meiryo", sans-serif;
+	}
+
+* {
+	margin:0 auto;
+	text-align:center;
+}
+
+header {
+	padding:20px;
+	height:70px
+	background-color:#77FFFF;
+}
+
+.interviews {
+	height:500px;
+}
+
+.interview {
+	display:inline-block; 
+	width:20%;
+}
+
+table {
+	width:300px;
+}
+
+.contact-submit {
+	background-color:#dee7ec;
+	color:#889eab;
+}
+
+form {
+	text-align:center;
+}
+
+textarea {
+	resize:none;
+}
+
+footer {
+	text-align:center;
+}

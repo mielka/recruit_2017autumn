@@ -1,0 +1,120 @@
+@charset "utf-8";
+* { }
+
+html { font-size:14px; overflow:auto; -webkit-text-size-adjust: 100%; }
+
+body {
+	line-height:1.6; color:#3F1F00; overflow:hidden;
+	font-family: "游ゴシック体", "Yu Gothic", YuGothic, "メイリオ", "Meiryo", sans-serif;
+	}
+
+* {
+	margin:0 auto;
+	text-align:center;
+}
+
+header {
+	padding:20px;
+	height:50px;
+	width:100%;
+}
+
+.header-title {
+	font-size: 24px;
+}
+
+.header-left {
+	float: left;
+}
+
+.catching {
+	height: 550px;
+	background-image:url(img/mielka2017.jpg);
+	background-size: cover;
+	padding-top: 100px;
+}
+
+.catching h1 {
+	font-size: 50px;
+	color: rgb(39,38,114);
+}
+
+.catching p {
+	color: rgb(39,38,114);
+}
+
+.mielka {
+	height: 600px;
+}
+
+.vision {
+	padding-top: 150px;
+}
+
+.mission {
+	padding-top: 50px;
+}
+
+.interview-wrapper h1 {
+	padding:20px 20px 0 20px;
+	font-size: 40px;
+}
+
+.jap {
+	font-size: 25px;
+}
+
+.interviews {
+	height:1000px;
+}
+
+.interview {
+	display:inline-block; 
+	width:25%;
+	float: left;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.interview-img :hover {
+	opacity: 0.8;
+}
+
+.about {
+	height:400px;
+}
+
+.section-title {
+	padding-bottom:20px;
+}
+
+table {
+	width:500px;
+	font-size:20px;
+}
+
+.tr-odd {
+	background-color: rgb(231,232,231);
+}
+
+.contact-submit {
+	background-color:#dee7ec;
+	color:#889eab;
+}
+
+.message {
+	padding: 30px;
+}
+
+.message-title {
+	font-size: 30px;
+	padding-top:20px;
+}
+
+form {
+	text-align:center;
+}
+
+textarea {
+	resize:none;
+}
