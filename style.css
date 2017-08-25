@@ -55,6 +55,33 @@ header {
 	padding-top: 50px;
 }
 
+.project {
+	height:500px;
+	padding-left:20px;
+	padding-right:20px;
+}
+
+.project h1 {
+	font-size:40px;
+}
+
+.project p {
+	font-size:25px;
+}
+
+.project-box {
+	float:left;
+	width:25%;
+}
+
+.project-img {
+	height:250px;
+}
+
+.project-text {
+	height:250px;
+}
+
 .interview-wrapper h1 {
 	padding:20px 20px 0 20px;
 	font-size: 40px;
@@ -65,7 +92,7 @@ header {
 }
 
 .interviews {
-	height:1000px;
+	height:1200px;
 }
 
 .interview {
