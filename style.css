@@ -44,7 +44,7 @@ header {
 }
 
 .mielka {
-	height: 550px;
+	height: 620px;
 }
 
 .vision {
@@ -53,6 +53,7 @@ header {
 
 .mission {
 	padding-top: 50px;
+	padding-bottom:50px;
 }
 
 .project {
@@ -64,11 +65,6 @@ header {
 
 .project h1 {
 	padding-top:10px;
-}
-
-.project p {
-	font-size:20px;
-	padding-bottom:20px;
 }
 
 .procject-area {
@@ -120,10 +116,6 @@ header {
 	padding-bottom: 10px;
 }
 
-.interview p {
-	font-size:30px;
-}
-
 .interview-img :hover {
 	opacity: 0.8;
 }
@@ -139,9 +131,9 @@ header {
 	font-size:40px;
 }
 
-.about p {
+.section-subtitle {
 	font-size:25px;
-	padding-bottom:10px;
+	padding-bottom:20px;
 }
 
 table {
