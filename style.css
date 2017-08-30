@@ -108,9 +108,6 @@ header {
 }
 
 .interview {
-	display:inline-block;
-	width:33%;
-	float: left;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
