@@ -104,7 +104,19 @@ header {
 }
 
 .interviews {
-	height:1000px;
+	height: 1000px;
+}
+
+.miwa {
+	background:linear-gradient(-45deg, #fff 50%, #ffc033 50%, #ffc033);
+}
+
+.nishiyama {
+	background:linear-gradient(45deg, #fff 50%, #ffc0cb 50%, #ffc0cb);
+}
+
+.kohdera {
+	background:linear-gradient(-45deg, #fff 50%, #ffc099 50%, #ffc099);
 }
 
 .interview {
