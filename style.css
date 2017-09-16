@@ -163,42 +163,41 @@ body {
   transform: translate3d(0, 0, 0);
 }
 
-.project {
-	height:700px;
+
+.top h2 {
+	font-size: 70px;
+	color:white;
+}
+
+.top p {
+	font-size:30px;
+	color:white;
+}
+
+.projects {
 	background-color:#dddeda;
+}
+
+.pjt {
+	height:1000px;
 	padding-left:50px;
 	padding-right:50px;
 }
 
-.project h1 {
-	padding-top:10px;
-}
-
-.procject-area {
-	height:70%;
-}
-
-.project-box {
+.project {
+	width:50%;
+	height:50%;
 	float:left;
-	width:33%;
-	padding-top:30px;
 }
 
-.project-img {
-	height:50%;
+.projects h2 {
+	font-size:45px;
+	padding-top:20px;
 }
 
-.project-text {
-	height:50%;
-}
-
-.project-text h2 {
-	font-size:35px;
-}
-
-.interview-wrapper {
-	padding-left:70px;
-	padding-right:70px;
+.project h3 {
+	padding-top:10px;
+	font-size:25px;
 }
 
 .interview-wrapper h1 {
