@@ -252,43 +252,42 @@ body {
 	float:left;
 }
 
+.action {
+	height:200px;
 }
 
-table {
-	width:800px;
-	font-size:20px;
+.action p {
+	margin:20px;
 }
 
-tr {
-	height:35px;
+.action a {
+        /* ブロックレベル要素化 */
+        display: block;
+
+        /* サイズ指定 */
+        width: 200px;
+        height: 50px;
+				border-radius:10px;
+
+        /* 縦横中央揃え */
+        text-align: center;
+        line-height: 50px;
+				margin-top:50px;
+
+        /* 色指定 */
+        color: #FFFFFF;
+        background-color: #0099B5;
+
+        /* その他 */
+        font-size: 12px;
+        text-decoration: none;
 }
 
-.tr-odd {
-	background-color: rgb(231,232,231);
+.action a:hover {
+        color: #FFFFFF;
+        background-color: #3E4051;
 }
 
-.contact-submit {
-	background-color:#dee7ec;
-	color:#889eab;
-}
-
-.contact {
-	padding-bottom:30px;
-	background-color:#fafaf0;
-}
-
-.button {
-	display:block;
-	width:200px;
-	height:50px;
-	background-color:skyblue;
-	border-radius:10px;
-}
-
-.button p {
-	padding:15px;
-}
-
-.container p {
+.copyright {
 	padding-bottom:20px;
 }
