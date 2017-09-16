@@ -200,54 +200,58 @@ body {
 	font-size:25px;
 }
 
-.interview-wrapper h1 {
-	padding:20px 20px 0 20px;
-	font-size: 40px;
+.band {
+	height:40px;
+	background-color:white;
+	padding:5px;
 }
 
-.jap {
-	font-size: 25px;
+.band a {
+	display:block;
+	width:100%;
 }
 
 .interviews {
-	height: 1000px;
+	background-color:#ccc;
+	height:1000px;
+	padding:20px;
 }
 
-.miwa {
-	background:linear-gradient(-45deg, #fff 50%, #ffc033 50%, #ffc033);
-}
-
-.nishiyama {
-	background:linear-gradient(45deg, #fff 50%, #ffc0cb 50%, #ffc0cb);
-}
-
-.kohdera {
-	background:linear-gradient(-45deg, #fff 50%, #ffc099 50%, #ffc099);
+.interviews h2 {
+	font-size:45px;
+	padding:20px;
 }
 
 .interview {
-	padding-top: 10px;
-	padding-bottom: 10px;
+	text-align:center;
+	float:left;
+	width:100%;
 }
 
-.interview-img :hover {
-	opacity: 0.8;
-}
-
-.about {
-	height:400px;
-	padding-bottom:40px;
-}
-
-.section-title {
-	padding-top:20px;
-	padding-bottom:10px;
+.interview h2 {
 	font-size:40px;
 }
 
-.section-subtitle {
-	font-size:25px;
-	padding-bottom:20px;
+.interview p {
+	font-size:20px;
+}
+
+.interview-title {
+	padding-bottom:1px solid white;
+}
+
+.interview-img {
+	padding:20px;
+	width:45%;
+	float:left;
+}
+
+.interview-txt {
+	padding:20px;
+	width:45%;
+	float:left;
+}
+
 }
 
 table {
