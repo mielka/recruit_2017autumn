@@ -1,6 +1,4 @@
 @charset "utf-8";
-* { }
-
 html { font-size:14px; overflow:auto; -webkit-text-size-adjust: 100%; }
 
 body {
@@ -11,11 +9,14 @@ body {
 * {
 	margin:0 auto;
 	text-align:center;
+	box-sizing:border-box;
+	/* box-sizing:border-box;を指定すると
+	widthの合計にpaddingとborderが追加される。 */
 }
 
 .top {
 	height: 550px;
-	background-image:url(img/mielka2017.jpg);
+	background-image:url(img/mielka2017-1.jpg);
 	background-size: cover;
 	padding-top: 100px;
 }
@@ -37,7 +38,7 @@ body {
   z-index: 100;
 }
 .MenuHeader {
-  color: #999999;
+  color: white;
   display: inline-block;
   float: left;
   font-weight: 100;
@@ -164,7 +165,7 @@ body {
 }
 
 
-.top h2 {
+.vision-title h2 {
 	font-size: 70px;
 	color:white;
 }
@@ -188,6 +189,22 @@ body {
 	width:50%;
 	height:50%;
 	float:left;
+}
+
+.cse {
+	background-color:skyblue;
+}
+
+.event {
+	background-color:green;
+}
+
+.thinktank {
+	background-color:red;
+}
+
+.trip {
+	background-color:yellow;
 }
 
 .projects h2 {
@@ -290,4 +307,11 @@ body {
 
 .copyright {
 	padding-bottom:20px;
+}
+
+/* 以下、レスポンシブ */
+@media (max-width:670px ){
+	.project {
+		width:100%;
+	}
 }
