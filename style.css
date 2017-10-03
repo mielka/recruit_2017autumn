@@ -21,16 +21,16 @@ body {
 	padding-top: 100px;
 }
 
-.HiddenCheckbox {
-  display: none;
-}
+/**メニュー部分**/
+
+.HiddenCheckbox { display: none; }
 .MenuContainer {
   position: fixed;
   left: 0;
   top: 0;
   display: block;
   padding: 20px;
-  width: 30%;
+  width: 20%;
   height: 100%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -62,8 +62,8 @@ body {
   z-index: 2;
 }
 .MenuIcon::before {
-  -webkit-box-shadow: #999999 0 12px 0;
-  box-shadow: #999999 0 12px 0;
+  -webkit-box-shadow: skyblue 0 12px 0;
+  box-shadow: skyblue 0 12px 0;
   height: 6px;
   -webkit-transform-origin: left top;
   -ms-transform-origin: left top;
@@ -80,7 +80,7 @@ body {
 }
 .MenuIcon::before,
 .MenuIcon::after {
-  background: #999999;
+  background: skyblue;
   display: block;
   content: '';
   position: absolute;
@@ -88,7 +88,7 @@ body {
   transition: box-shadow 0.2s linear, transform 0.4s 0.2s;
 }
 .Menu {
-  background: #333;
+  background: blue;
   bottom: 0;
   left: -90%;
   position: absolute;
@@ -113,17 +113,9 @@ body {
   -webkit-transform: rotate(-45deg) translate3d(6px, 3px, 0);
   transform: rotate(-45deg) translate3d(6px, 3px, 0);
 }
-.HiddenCheckbox:checked ~ .Menu {
-  left: 0;
-}
-.Menu-list {
-  list-style-type: none;
-  margin: 60px 0 0;
-  padding: 0;
-}
-.Menu-item {
-  margin: 0;
-}
+.HiddenCheckbox:checked ~ .Menu { left: 0; }
+.Menu-list { list-style-type: none; margin: 100px 0 0; padding: 0; }
+.Menu-item { margin: 0; }
 .Menu-link {
   color: #fff;
   display: block;
@@ -134,7 +126,7 @@ body {
   z-index: 1;
 }
 .Menu-link::before {
-  background: #444;
+  background: green;
   bottom: 0;
   content: '';
   left: 0;
@@ -147,7 +139,7 @@ body {
 }
 .Menu-link::after {
   content: attr(href);
-  color: #fff;
+  color: red;
   float: right;
   opacity: 0;
   -webkit-transition: opacity 0.8s, -webkit-transform 0.4s;
@@ -155,25 +147,8 @@ body {
   -webkit-transform: translate3d(100%, 0, 0);
   transform: translate3d(100%, 0, 0);
 }
-.Menu-link:hover::before {
-  right: 0;
-}
-.Menu-link:hover::after {
-  opacity: 0.5;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-
-
-.vision-title h2 {
-	font-size: 70px;
-	color:white;
-}
-
-.top p {
-	font-size:30px;
-	color:white;
-}
+.Menu-link:hover::before { right: 0; }
+.Menu-link:hover::after { opacity: 0.5; -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
 
 .projects {
 	background-color:#dddeda;
