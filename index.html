@@ -16,6 +16,27 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="responsive.css">
     <script type="text/javascript" src="jquery.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script>
+    (function($) {
+        $(function() {
+            var $header = $('#top-head');
+            // Nav Fixed
+           $(window).scroll(function() {
+                if ($(window).scrollTop() > 350) {
+                    $header.addClass('fixed');
+                } else {
+                $header.removeClass('fixed');
+              }
+            });
+            // Nav Toggle Button
+            $('#nav-toggle').click(function(){
+                $header.toggleClass('open');
+            });
+        });
+    })(jQuery);
+    </script>
+    
     <title>Mielka新歓ページ</title>
   </head>
 
@@ -23,119 +44,132 @@
   <body>
 
 
-      <div id="top">
-        <div class="MenuContainer">
-          <input id="menu" type="checkbox" name="menu" class="HiddenCheckbox"/>
-          <label for="menu" class="MenuIcon"></label>
-          <h2 class="MenuHeader">Menu</h2>
-          <nav class="Menu">
-            <ul class="Menu-list">
-              <li class="Menu-item"><a href="#projects" class="Menu-link">Project</a></li>
-              <li class="Menu-item"><a href="#interviews" class="Menu-link">Interview</a></li>
-              <li class="Menu-item"><a href="#action" class="Menu-link">Action</a></li>
-            </ul>
-          </nav>
-        </div>
+      <section id="top">
+        <header id="top-head" class="row" role="banner">
+          <div class="inner">
+            <div id="mobile-head">
+                <div id="nav-toggle">
+                    <div>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <nav id="global-nav">
+                <ul>
+                  <li><a href="#projects">PROJECT</a></li>
+                  <li><a href="#members">MEMBER</a></li>
+                  <li><a href="https://goo.gl/forms/16CBjKi2oMWqS81a2" target="_blank">JOIN US</a></li>
+                </ul>
+            </nav>
+          </div>
+        </header>
 
         <div id="vision">
-          <img src="img/logo/logo3.jpg">
+          <img src="img/logo/logo.png">
             <div class="vision-title">
                 <h2>若者が「じぶんごと」として社会を考え、語り合い、行動することが当たり前となる社会。<br>
                 そして、未来に関わるみんなの協力・協働・共創によって未来志向の政治が実現される社会。</h2>
             </div>
-            <div class="vision-message">
-                <p class="vision-message1">ビジョンの説明をつらつらと書き連ねる。<br>ビジョンの説明をつらつらと語る。<br>ビジョンの説明をつらつらと語る。<br>missionの話も混ぜながら話す。</p>
-            </div>
+            <div>
+            <a href="https://goo.gl/forms/16CBjKi2oMWqS81a2" target="_blank" class="entry">JOIN US</a>
+          </div>
         </div>
-      </div>
+      </section>
 
       <!--コンポーネントの区切り-->
 
-      <div id="projects">
-        <h2 class="title">Project</h2>
-        <p class="sub-title">プロジェクト</p>
-        <div class="pjt">
-          <div class="project cse">
-            <h3>シティズンシップ事業</h3>
-            <h4>アクティブラーニングで実現する主権者教育</h4><br>
-                <p class="project-message">2016年、日本で初めて高校生の主権者が生まれました。<br>
-                私たちは、日本の教育現場に「シティズンシップ教育」の風を吹かせるために、<br>
-                日々新たな取り組みを行っています。</p>
-            <img src="img/logo/cse.jpg">
+      <section id="projects" class="col span12 blue">
+        <div>
+          <h2 class="title">Project</h2>
+          
+          <div class="project">
+            <div><img src="img/logo/cse.jpg" alt="シティズンシップ事業"></div>
+            <div class="project-txt">
+              <h3>シティズンシップ事業</h3>
+              <span class="border"></span>
+              <p id="pjt-txt"><br>
+                私たちは、中高生に対し、社会の身近な問題を題材とした授業プログラムを開発・展開しています。<br>
+              生徒の皆さんが、これからの社会を担うために必要な力を、アクティブ・ラーニング形式で提供中です。</p>
+            </div>
           </div>
-          <div class="project event">
-            <h3>イベント事業</h3>
-            <h4>“政治”と新しい出会いを</h4><br>
-                <p class="project-message">普段よりもっと気軽な文脈で若者と政治を結びつけるイベントを開催することで<br>
-                若者が政治･社会を身近に感じるキッカケを提供します。<br>
-                新しい形で政治と触れることで、「政治＝お堅い」という印象を変えていきます。</p>
-            <img src="img/logo/event.jpg">
+          
+          <div class="project">
+            <div><img src="img/logo/sample1.jpg" alt="シンクタンク事業"></div>
+            <div class="project-txt">
+              <h3>シンクタンク事業</h3>
+              <span class="border"></span>
+              <p id="pjt-txt">Mielkaらぼで集合知を生み出そうぜ☆</p>
+            </div>
           </div>
-          <div class="project thinktank">
-            <h3>シンクタンク事業</h3>
-            <h4>Mielkaラボ【CivicTechを100万人に届ける】</h4><br>
-               <p class="project-message">政治情報のデータ解析・発信により、「投票の質」をあげる！<br>
-               日本初のCivicTechシンクタンク。<br></p>
-            <img src="img/logo/sample1.jpg">
+          
+          <div class="project">
+            <div><img src="img/logo/event.jpg" alt="イベント事業"></div>
+            <div class="project-txt">
+              <h3>イベント事業</h3>
+              <span class="border"></span>
+              <p id="pjt-txt">ウェイ↑<br>
+              イベントしよや↑</p>
+            </div>
           </div>
-          <div class="project trip">
-            <h3>研修旅行</h3>
-            <h4>国会議員</h4><br>
-               <p class="project-message">政治家のところにロビーイングしに行ったり、<br>
-               必要な人に講演をお願いし、ディスカッションするなどする。</p>
-            <img src="img/logo/sample1.jpg">
+
+          <div class="project">
+            <div><img src="img/logo/sample1.jpg" alt="研修旅行"></div>
+            <div class="project-txt">
+              <h3>研修旅行</h3>
+              <span class="border"></span>
+              <p id="pjt-txt">偉い人とディスカッションする！</p>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
+      <!--プロジェクト紹介終わり-->
 
       <!--コンポーネントの区切り-->
       <div id="band">
         <a href="#"><h3>帯リンク</h3></a>
         <!--上記のリンクからはコーポレートページへ飛ばす-->
       </div>
-      <!--コンポーネントの区切り-->
+      <!--sectionの区切り-->
 
-      <div id="interviews">
-      <h2 class="title">Interview</h2>
-      <p class="sub-title">インタビュー</p>
-        <div class="interview kosuke-miwa">
-          <div class="interview-img">
-            <img src="img/member/kosuke-miwa.jpg">
-            <h4 class="name">三輪 功祐</h4>
-            <p class="profile">NPO法人Mielka代表。同志社大学商学部2年。</p>
+      <section id="members">
+        <h2 class="title">Member</h2>
+        <div class="member-box">
+          <div class="member">
+            <img src="img/member/kosuke-miwa.jpg" alt="代表　三輪功祐">
+            <h3>三輪 功祐</h3>
+            <p>NPO法人Mielka代表。同志社大学商学部2年。ポスト資本主義の世界で政治家になるべく、日々持ち前のパッションで命を燃やしている。その熱さは周りに伝染する。ここ一年で一番成長してる期待の後輩。</p>
           </div>
-          <div class="interview-txt">
-            <p class="interview-title">インタビューを書き連ねる。</p>
-            <p class="interview-contents">インタビューをつらつらと。<br>それっぽいことを書いてみる。</p>
+
+          <div class="member">
+            <img src="img/member/reina-kohdera.jpg" alt="人事局長　幸寺玲奈">
+            <h3>幸寺 玲奈</h3>
+            <p>NPO法人Mielka人事局長。京都大学法学部3年。人が好きで、様々な地に足を運び現地の人と交流する。一次情報を自らで掴みに行き、その声を届けることに関しては彼女の右に出る者はいない。</p>
+          </div>
+
+          <div class="member">
+            <img src="img/member/yuto-taguchi.jpg" alt="新歓隊長　田口裕斗">
+            <h3>田口 裕斗</h3>
+            <p>NPO法人Mielka新歓隊長。立命館大学法学部1年。高校生の頃から主権者教育で活動し、Mielkaでも教育事業で活躍中。様々な学生との交流の場に足を運ぶなどそのフットワークは無類の軽さを持つ。</p>
           </div>
         </div>
-
-        <div class="interview sachio-nishiyama">
-          <div class="interview-txt">
-            <p class="interview-title">インタビューを書き連ねる。</p>
-            <p>インタビューをつらつらと。<br>それっぽいことを書いてみる。</p>
-          </div>
-          <div class="interview-img">
-            <img src="img/member/sachio-nishiyama.jpg">
-            <h4 class="name">西山 祥央</h4>
-            <p class="profile">NPO法人Mielka副代表。立命館大学国際関係学部2年。</p>
-          </div>
-        </div>
-
-      </div>
+      </section><!--Interview ここまで-->
 
       <!--コンポーネントの区切り-->
 
-      <div id="action">
-        <p>さあ、あなたも的な。</p>
+      <section id="action">
+        <p>さあ、あなたもMielkaで！<br>
+        応募フォーム</p>
           <div>
-            <a href="https://goo.gl/forms/16CBjKi2oMWqS81a2" target="_blank">BUTTON</a>
+            <a href="https://goo.gl/forms/16CBjKi2oMWqS81a2" target="_blank" class="btn">JOIN US</a>
           </div>
         <!--Googleフォームに飛ばす-->
-      </div>
+      </section>
 
-      <div class="foot">
+      <section class="foot">
         <p>Copyright © Mielka All Right Reserved.</p>
-      </div>
+      </section>
 
   </body>
+</html>
