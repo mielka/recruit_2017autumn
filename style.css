@@ -19,10 +19,9 @@ body {
 .title { font-size:45px; }
 
 #top {
-	height: 600px;
+  height:600px;
   width:100%;
 	padding-top: 100px;
-  background-color: #fff;
 }
 
 /**メニュー部分**/
@@ -259,6 +258,9 @@ div a.entry  {
 }
 
 
+
+
+
 @media screen and ( min-width:960px ){
 
   header .inner {
@@ -304,8 +306,9 @@ div a.entry  {
     color: #000;
   }
 
-  section { padding: 50px 0; }
+  .pjt-box { display:inline-block; text-align:center; }
 
+  section { padding: 50px 0; }
   section#projects h2 {
     letter-spacing: 2px;
   }
@@ -322,7 +325,7 @@ div a.entry  {
   }
   section#projects .project h3 {
     font-size: 15px;
-    font-weight: normal;
+    font-weight: bold;
     margin-bottom: 0;
     letter-spacing: 0;
   }
