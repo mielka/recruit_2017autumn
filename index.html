@@ -140,20 +140,109 @@
             <img src="img/member/kosuke-miwa.jpg" alt="代表　三輪功祐">
             <h3>三輪 功祐</h3>
             <p>NPO法人Mielka代表。同志社大学商学部2年。ポスト資本主義の世界で政治家になるべく、日々持ち前のパッションで命を燃やしている。その熱さは周りに伝染する。ここ一年で一番成長してる期待の後輩。</p>
+            <div id="modal-content">
+              <!-- モーダルウィンドウのコンテンツ開始 -->
+              <p>若年層が投票に行くことで、僕らに向けた政治をしてもらいたい。</p>
+              <p>だから若者に投票に行って欲しい。って思ってる。<br>
+              政治は無関心ではいられても、無関係ではいられないんです。</p>
+              <p><a id="modal-close" class="button-link">閉じる</a></p>
+              <!-- モーダルウィンドウのコンテンツ終了 -->
+            </div>
+            <p class="modal"><a id="modal-open" class="button-link">代表の想い</a></p>
+            <!-- ここまでモーダルウィンドウ -->
           </div>
 
           <div class="member">
             <img src="img/member/reina-kohdera.jpg" alt="人事局長　幸寺玲奈">
             <h3>幸寺 玲奈</h3>
             <p>NPO法人Mielka人事局長。京都大学法学部3年。人が好きで、様々な地に足を運び現地の人と交流する。一次情報を自らで掴みに行き、その声を届けることに関しては彼女の右に出る者はいない。</p>
+            <div id="modal-content">
+              <!-- モーダルウィンドウのコンテンツ開始 -->
+              <p>モーダルウィンドウのコンテンツをHTMLで自由に編集することができます。画像や、動画埋め込みなど、お好きなものを入れて下さい。</p>
+              <p>「閉じる」か「背景」をクリックするとモーダルウィンドウを終了します。</p>
+              <p><a id="modal-close" class="button-link">閉じる</a></p>
+              <!-- モーダルウィンドウのコンテンツ終了 -->
+            </div>
+            <p class="modal"><a id="modal-open" class="button-link">Mielkaでの成長機会</a></p>
+            <!-- ここまでモーダルウィンドウ -->
           </div>
 
           <div class="member">
             <img src="img/member/yuto-taguchi.jpg" alt="新歓隊長　田口裕斗">
             <h3>田口 裕斗</h3>
             <p>NPO法人Mielka新歓隊長。立命館大学法学部1年。高校生の頃から主権者教育で活動し、Mielkaでも教育事業で活躍中。様々な学生との交流の場に足を運ぶなどそのフットワークは無類の軽さを持つ。</p>
+            <div id="modal-content">
+              <!-- モーダルウィンドウのコンテンツ開始 -->
+              <p>モーダルウィンドウのコンテンツをHTMLで自由に編集することができます。画像や、動画埋め込みなど、お好きなものを入れて下さい。</p>
+              <p>「閉じる」か「背景」をクリックするとモーダルウィンドウを終了します。</p>
+              <p><a id="modal-close" class="button-link">閉じる</a></p>
+              <!-- モーダルウィンドウのコンテンツ終了 -->
+            </div>
+            <p class="modal"><a id="modal-open" class="button-link">入会のきっかけ</a></p>
+            <!-- ここまでモーダルウィンドウ -->
           </div>
         </div>
+
+        <script>
+          $(function(){
+            //モーダルウィンドウを出現させるクリックイベント
+            $("#modal-open").click( function(){
+
+            //キーボード操作などにより、オーバーレイが多重起動するのを防止する
+            $( this ).blur() ;  //ボタンからフォーカスを外す
+            if( $( "#modal-overlay" )[0] ) return false ;   //新しくモーダルウィンドウを起動しない (防止策1)
+            //if($("#modal-overlay")[0]) $("#modal-overlay").remove() ;   //現在のモーダルウィンドウを削除して新しく起動する (防止策2)
+
+            //オーバーレイを出現させる
+            $( "body" ).append( '<div id="modal-overlay"></div>' ) ;
+            $( "#modal-overlay" ).fadeIn( "slow" ) ;
+
+            //コンテンツをセンタリングする
+            centeringModalSyncer() ;
+
+            //コンテンツをフェードインする
+            $( "#modal-content" ).fadeIn( "slow" ) ;
+
+            //[#modal-overlay]、または[#modal-close]をクリックしたら…
+            $( "#modal-overlay,#modal-close" ).unbind().click( function(){
+
+              //[#modal-content]と[#modal-overlay]をフェードアウトした後に…
+              $( "#modal-content,#modal-overlay" ).fadeOut( "slow" , function(){
+
+                //[#modal-overlay]を削除する
+                $('#modal-overlay').remove() ;
+
+              } ) ;
+
+          } ) ;
+
+      } ) ;
+//リサイズされたら、センタリングをする関数[centeringModalSyncer()]を実行する
+$( window ).resize( centeringModalSyncer ) ;
+
+  //センタリングを実行する関数
+  function centeringModalSyncer() {
+
+    //画面(ウィンドウ)の幅、高さを取得
+    var w = $( window ).width() ;
+    var h = $( window ).height() ;
+
+    // コンテンツ(#modal-content)の幅、高さを取得
+    // jQueryのバージョンによっては、引数[{margin:true}]を指定した時、不具合を起こします。
+//    var cw = $( "#modal-content" ).outerWidth( {margin:true} );
+//    var ch = $( "#modal-content" ).outerHeight( {margin:true} );
+    var cw = $( "#modal-content" ).outerWidth();
+    var ch = $( "#modal-content" ).outerHeight();
+
+    //センタリングを実行する
+    $( "#modal-content" ).css( {"left": ((w - cw)/2) + "px","top": ((h - ch)/2) + "px"} ) ;
+
+  }
+
+} ) ;
+
+        </script>
+
       </section><!--Interview ここまで-->
 
       <!--コンポーネントの区切り-->
