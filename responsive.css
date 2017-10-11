@@ -116,13 +116,15 @@
 
   /**top部分**/
   .vision-title h2 { font-size: 17px; }
-  .vision img { width:20%; }
+  img.mielka-logo { width:70%; }
   
   /**プロジェクト紹介部分**/
   .project img { width: 45%; }
   .pjt-txt { display: block; }
 
   .member-box { width:90%; padding:10px 11%; }
+
+
 }
 
 @media (max-width:670px ){
@@ -219,7 +221,7 @@
   /**vision部分**/
   .vision-title h2 { font-size:15px; }
   .vision-message p { font-size:15px; }
-  .vision img { width:25%; }
+  img.mielka-logo { width:70%; }
 
   .pjt-txt {
     display: block;
