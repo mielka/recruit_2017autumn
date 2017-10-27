@@ -361,7 +361,7 @@ div a.entry  {
     margin-bottom: 0;
   }
   section#projects .project h3 {
-    font-size: 15px;
+    font-size: 17px;
     font-weight: bold;
     margin-bottom: 0;
     letter-spacing: 0;
@@ -383,11 +383,16 @@ div a.entry  {
     border-bottom: 1px solid #000;
     margin: 10px 0;
   }
+  section#project #pjt-txt {
+    width:600px;
+  }
   section#projects .project p {
-    font-size: 13px;
+    font-size: 15px;
     text-align: left;
     letter-spacing: 0;
     margin-bottom: 0;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .member-box { width:90%; padding:20px 10%; }
