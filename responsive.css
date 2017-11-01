@@ -101,7 +101,15 @@
   img.mielka-logo { width:70%; }
   
   /**プロジェクト紹介部分**/
-  .project img { width: 45%; }
+  .project img { width: 60%; }
+  #pjt-txt {
+    margin-top:10px;
+    margin-bottom: 2em;
+    padding-left:20%;
+    padding-right: 20%;
+    display: block;
+    text-align:left;
+  }
   .member-box { width:90%; padding:10px 11%; }
 
 
@@ -203,15 +211,30 @@
   .vision-message p { font-size:15px; }
   img.mielka-logo { width:70%; }
 
-  .pjt-txt {
+  #projects { padding-bottom:30px; }
+  .project img { width:70%; }
+  .project-txt h3 { margin-top: 10px; margin-bottom: 0; }
+  section#projects .project span.border {
+    width: 70%;
     display: block;
+    border-bottom: 1px solid #000;
+    margin: 10px 15%;
   }
 
-  /**project部分**/
-  .pjt-txt { display: block; }
+  #pjt-txt {
+    margin-top:10px;
+    margin-bottom: 2em;
+    padding-left:15%;
+    padding-right: 15%;
+    display: block;
+    text-align:left;
+  }
 
   /**member部分**/
-  .member { width:80%; }
+  .member {
+    width:80%;
+    margin-bottom:15px;
+  }
 
 }
 }
