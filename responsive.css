@@ -88,31 +88,6 @@
         transform: translateY(556px);
     }
 
-  .span_1 { width: 8.33333333333%; }
-  .span_2 { width: 16.6666666667%; }
-  .span_3 { width: 25%; }
-  .span_4 { width: 33.3333333333%; }
-  .span_5 { width: 41.6666666667%; }
-  .span_6 { width: 50%; }
-  .span_7 { width: 58.3333333333%; }
-  .span_8 { width: 66.6666666667%; }
-  .span_9 { width: 75%; }
-  .span_10 { width: 83.3333333333%; }
-  .span_11 { width: 91.6666666667%; }
-  .span_12 { width: 100%; }
-  
-  .gutters .span_1 { width: 6.5%; }
-  .gutters .span_2 { width: 15.0%; }
-  .gutters .span_3 { width: 23.5%; }
-  .gutters .span_4 { width: 32.0%; }
-  .gutters .span_5 { width: 40.5%; }
-  .gutters .span_6 { width: 49.0%; }
-  .gutters .span_7 { width: 57.5%; }
-  .gutters .span_8 { width: 66.0%; }
-  .gutters .span_9 { width: 74.5%; }
-  .gutters .span_10 { width: 83.0%; }
-  .gutters .span_11 { width: 91.5%; }
-  .gutters .span_12 { width: 100%; }
 
   /**top部分**/
   .vision-title h2 { font-size: 17px; }
@@ -120,8 +95,6 @@
   
   /**プロジェクト紹介部分**/
   .project img { width: 45%; }
-  .pjt-txt { display: block; }
-
   .member-box { width:90%; padding:10px 11%; }
 
 
@@ -233,30 +206,5 @@
   /**member部分**/
   .member { width:80%; }
 
-  .span_1 { width: 8.33333333333%; }
-  .span_2 { width: 16.6666666667%; }
-  .span_3 { width: 25%; }
-  .span_4 { width: 33.3333333333%; }
-  .span_5 { width: 41.6666666667%; }
-  .span_6 { width: 50%; }
-  .span_7 { width: 58.3333333333%; }
-  .span_8 { width: 66.6666666667%; }
-  .span_9 { width: 75%; }
-  .span_10 { width: 83.3333333333%; }
-  .span_11 { width: 91.6666666667%; }
-  .span_12 { width: 100%; }
-  
-  .gutters .span_1 { width: 6.5%; }
-  .gutters .span_2 { width: 15.0%; }
-  .gutters .span_3 { width: 23.5%; }
-  .gutters .span_4 { width: 32.0%; }
-  .gutters .span_5 { width: 40.5%; }
-  .gutters .span_6 { width: 49.0%; }
-  .gutters .span_7 { width: 57.5%; }
-  .gutters .span_8 { width: 66.0%; }
-  .gutters .span_9 { width: 74.5%; }
-  .gutters .span_10 { width: 83.0%; }
-  .gutters .span_11 { width: 91.5%; }
-  .gutters .span_12 { width: 100%; }
 }
 }
