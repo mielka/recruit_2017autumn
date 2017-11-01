@@ -96,10 +96,6 @@ header a {
     -webkit-transition: top 0.65s ease-in;
     -moz-transition: top 0.65s ease-in;
 }
-#top-head.fixed .logo {
-    font-size: 24px;
-    color: #333;
-}
 #top-head.fixed #global-nav ul li a {
     color: #333;
     padding: 0 20px;
@@ -165,12 +161,6 @@ div a.entry  {
 /**プロジェクト部分**/
 
 #projects { background-color:#e0ffff; }
-
-
-/**帯リンク部**/
-
-#band { background-color:white; }
-#band a { display:block; width:100%; }
 
 /** #members **/
 #members { background-color:#9efafa; }
