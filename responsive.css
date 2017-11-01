@@ -1,5 +1,12 @@
 @media (max-width:960px ){
 
+  .title {
+    margin-top:0;
+    padding-top:20px;
+    margin-bottom:0;
+    padding-bottom:10px;
+  }
+
   #top-head,
     .inner {
         width: 100%;
