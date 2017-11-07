@@ -100,6 +100,11 @@ header a {
     color: #333;
     padding: 0 20px;
 }
+
+#top-head.fixed #global-nav ul li a:hover {
+  background-color:rgba(0,0,0,0.7);
+  color:#fff;
+}
  
 /* Toggle Button */
 #nav-toggle {
@@ -154,6 +159,8 @@ div a.entry  {
     color:#fff;
 }
 
+a.entry:hover { color: #FFFFFF; background-color:gray; }
+
 /**
 ここまでtop部分とheaderメニューなど。
 **/
@@ -164,6 +171,9 @@ div a.entry  {
 
 /** #members **/
 #members { background-color:#9efafa; }
+#members li {
+  list-style: none;
+}
 
 .member-box {
     display: -webkit-flex;
@@ -183,7 +193,7 @@ div a.entry  {
     margin-bottom: 40px;
 }
 
-.member img { width: 100%; }
+.member img { width: 90%; }
 .member:nth-of-type(4n) { margin-right:0; }
 .member:nth-last-of-type(1),
 .member:nth-last-of-type(2),
@@ -196,13 +206,88 @@ div a.entry  {
     font-size: 20px;
     font-family: Helvetica Neue, san-serif;
     font-weight: normal;
-    margin: 10px 0 5px;
+    margin: 0;
+  }
+  .tab li {
+    cursor: pointer;
+  }
+  .tab li.active {
+    cursor: auto;
+  }
+  .content ul {
+    display:none;
+  }
+  .content ul.show {
+    display: block;
+    text-align: center;
+    margin-left: 3.33%;
+    margin-right: 3.33%;
   }
 
-  .member p {
-    text-align: left; 
-  }
+   /*▼▼▼モーダル▼▼▼*/
 
+        .modalwin {
+            position: fixed;
+            width: 600px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px 0 #000;
+            z-index: 1;
+        }
+
+        .modalwin dl {
+            padding: 0px 10px;
+        }
+
+        .show {
+            display: block;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        .modalwin h1 {
+            background: #ededed;
+            padding: 20px;
+            border-radius: 5px 5px 0 0;
+            font-size: 1.2em;
+            margin-top: 0;
+            text-align: center;
+        }
+
+        .modalwin-contents {
+            padding: 5px;
+        }
+
+        .modalwin-contents img {
+            margin: 0 0 1em 0;
+            float: left;
+            width: 30%;
+            height: 30%;
+        }
+
+        .modalwin-contents p {
+            margin: 0 0 1em 0;
+            line-height: 1.8em;
+        }
+
+        #shade {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #999;
+            opacity: 0.9;
+            z-index: 1;
+        }
+
+        @media screen and (max-width: 600px) {
+            .modalwin {
+                width: 90%;
+            }
+        }
 
 /**
 
@@ -213,39 +298,6 @@ div a.entry  {
 
 
 
-  /* ここまでデモページ用のコード */
-
-#modal-content {
-  width: 50% ;
-  margin: 0 ;
-  padding: 10px 20px ;
-  border: 2px solid #aaa ;
-  background: #fff ;
-  position: fixed ;
-  display: none ;
-  z-index:2;
-}
-  
-#modal-overlay {
-  z-index:1;
-  display: none ;
-  position: fixed ;
-  top: 0 ;
-  left: 0 ;
-  width: 100%;
-  height: 120%;
-  background-color: rgba( 0,0,0, 0.75 );
-}
-
-.button-link {
-  color: #00f ;
-  text-decoration: underline;
-}
- 
-.button-link:hover {
-  cursor: pointer ;
-  color: #f00 ;
-}
 
 
 /**アクション部分**/
@@ -284,11 +336,49 @@ div a.entry  {
 .row { padding-bottom: 0em;
 }
 
+.page-top {
+  margin: 0 ;
+  padding: 0 ;
+  display:none;
+}
+ 
+.page-top p {
+  margin: 0 ;
+  padding: 0 ;
+
+  position: fixed ;
+  right: 16px ;
+  bottom: 16px ;
+}
+ 
+.move-page-top {
+  display: block ;
+  background: #000 ;
+  width: 50px ;
+  height: 50px ;
+
+  color: #fff ;
+  line-height: 50px ;
+  text-decoration: none ;
+  text-align: center ;
+
+  -webkit-transition:all 0.3s ;
+  -moz-transition:all 0.3s ;
+  transition:all 0.3s ;
+
+  cursor:pointer;
+}
+
+.move-page-top:hover {
+  opacity: 0.5 ;
+}
+
 
 
 
 
 @media screen and ( min-width:960px ){
+
 
   header .inner {
     width: 80%;
@@ -333,6 +423,7 @@ div a.entry  {
     color: #000;
   }
 
+
   .pjt-box { display:inline-block; text-align:center; }
 
   section { padding: 50px 0; }
@@ -346,6 +437,7 @@ div a.entry  {
     display: -o-flex;
     display: flex;
     margin-bottom: 50px;
+    width:;
   }
   section#projects .project:last-of-type {
     margin-bottom: 0;
@@ -353,12 +445,17 @@ div a.entry  {
   section#projects .project h3 {
     font-size: 17px;
     font-weight: bold;
+    text-align:center;
     margin-bottom: 0;
     letter-spacing: 0;
+
   }
   section#projects .project h3 span {
     font-size: 20px;
     margin-right: 20px;
+  }
+  section#projects .project-txt {
+    width:500px;
   }
   section#projects .project img {
     width: 314px;

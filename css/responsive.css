@@ -116,6 +116,13 @@
 }
 
 @media (max-width:670px ){
+
+  .title {
+    margin-top:0;
+    padding-top:20px;
+    margin-bottom:0;
+    padding-bottom:10px;
+  }
   #top-head,
     .inner {
         width: 100%;
@@ -204,7 +211,9 @@
         transform: translateY(556px);
     }
 
-
+  section#vision {
+    padding-bottom:0px;
+  }
 
   /**vision部分**/
   .vision-title h2 { font-size:15px; }
