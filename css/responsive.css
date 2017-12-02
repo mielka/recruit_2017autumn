@@ -240,10 +240,14 @@
   }
 
   /**member部分**/
+  .member-box { width:80%; padding:10px 10%; margin: 0 10%; }
   .member {
-    width:80%;
+    width:60%;
     margin-bottom:15px;
   }
+  .modal h1 { font-size:27px; }
+  .modal-prof { width: 80%; margin:0 10%; }
+  .modal-prof img { width:80%; margin: 0 10%; }
 
 }
 }
