@@ -192,11 +192,90 @@ a.entry:hover { color: #FFFFFF; background-color:gray; }
     margin-bottom: 40px;
 }
 
+.btn:hover,
+.member:hover { opacity: 0.6; }
 .member img { width: 90%; }
 .member:nth-of-type(4n) { margin-right:0; }
 .member:nth-last-of-type(1),
 .member:nth-last-of-type(2),
 .member:nth-last-of-type(3),
+.member:nth-last-of-type(4) { margin-bottom: 0; }
+.member h3 { font-size: 20px; font-family: Helvetica Neue, san-serif; font-weight: normal; margin: 0; }
+.txt { display: inline-block; text-align: left;}
+
+.interview-content {
+  display: inline-block;
+  text-align: left;
+  width: 90%;
+  margin-top: 70px;
+}
+    .modal-prof { width: 70%; margin: 0 auto; }
+    .modal h1 { font-size:50px; }
+    .modal-prof img { width: 40%; float: left; }
+    .modal-prof p { display: inline-block; text-align: left; width:55%; float: right; }
+    .disable-mouse { pointer-events: none; }
+    body.disable-scroll {
+      overflow: hidden;
+      height: 100%;
+    }
+    .member-box { overflow: hidden; }
+    .modal {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 100px;
+      background: #333;
+      color: #fff;
+      z-index: 1;
+      visibility: hidden;
+      opacity: 0;
+      pointer-events: none;
+      transition: 200ms ease;
+      overflow: auto;
+    }
+    .modal-close-btn {
+      display: block;
+      position: fixed;
+      top: 0;
+      right: 0;
+      background: url(../img/close.png) no-repeat center;
+      width: 32px;
+      height: 32px;
+      padding: 25px;
+      margin: 70px 40px 40px 60px;
+      opacity: 0.8;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+    .modal-close-btn:hover { opacity: 1; }
+    .modal.show {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+    .quote-box__bubble {
+      position: relative;
+      background: white;
+      padding: 16px;
+      color: #555;
+      border-radius: 5px;
+      max-width: 480px;
+      margin: 0 auto 20px;
+    }
+    .quote-box__bubble:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      border: 10px solid transparent;
+      border-top-color: white;
+      border-top-width: 10px;
+    }
 
 
 /**
