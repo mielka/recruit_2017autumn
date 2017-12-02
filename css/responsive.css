@@ -111,8 +111,16 @@
     display: block;
     text-align:left;
   }
-  .member-box { width:90%; padding:10px 11%; }
 
+  /* member */
+  .member-box { width:60%; padding:10px 20%; margin: 0 10%; }
+  .member { display: inline-block;  width:60%; margin: 10px; border:none;}
+
+  .modal h1 { font-size:40px; }
+  .modal-prof { width: 80%; margin: 0 10%; }
+  .modal-prof img { width:60%; margin: 0 20%; }
+  .modal-prof p { width:100%; text-align: center; }
+  .belong { display: inline-block; text-align: left; }
 
 }
 
