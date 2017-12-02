@@ -4,12 +4,13 @@
 /* IMPORT 12 COLUMN RESPONSIVE GS */
 @import url("responsive.css");
 
-html { font-size:14px; overflow:auto; -webkit-text-size-adjust: 100%; }
+html { font-size:14px; -webkit-text-size-adjust: 100%; }
 
 body {
-	line-height:1.6; color:#3F1F00; overflow:hidden;
+	line-height:1.6; color:#3F1F00; overflow-x: hidden;
 	font-family: Georgia, 游明朝, "Yu Mincho", YuMincho, "Hiragino Mincho ProN", HGS明朝E, メイリオ, Meiryo, serif;
   margin: 0 auto; text-align: center; box-sizing: border-box;
+  width: 100%;
 	}
 	/* box-sizing:border-box;を指定すると
 	widthの合計にpaddingとborderが追加される。 */
