@@ -321,7 +321,7 @@ a.entry:hover { color: #FFFFFF; background-color:gray; }
 
 #action a:hover { color: #FFFFFF; background-color:gray; }
 
-.foot { padding-bottom:20px; }
+footer { padding-bottom:20px; }
 
 
 .container:after,
