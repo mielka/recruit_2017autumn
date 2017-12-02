@@ -101,6 +101,7 @@
   img.mielka-logo { width:70%; }
   
   /**プロジェクト紹介部分**/
+  .project { margin: 10px; width: 75%; }
   .project img { width: 60%; }
   #pjt-txt {
     margin-top:10px;
