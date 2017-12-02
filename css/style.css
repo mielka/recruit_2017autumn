@@ -168,14 +168,12 @@ a.entry:hover { color: #FFFFFF; background-color:gray; }
 
 /**プロジェクト部分**/
 
-#projects { background-color:#e0ffff; }
+#projects { background-color: #18c0f4; }
+.project { display: inline-block; background: #fff; border:solid 1.5px #fff; padding: 20px; }
 
 /** #members **/
-#members { background-color:#9efafa; }
-#members li {
-  list-style: none;
-}
-
+#members { background-color: #2cace4; }
+#members li { list-style: none; }
 .member-box {
     display: -webkit-flex;
     display: -moz-flex;
