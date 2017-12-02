@@ -392,5 +392,5 @@ footer { padding-bottom:20px; }
     margin-left: auto;
   }
 
-  .member-box { width:90%; padding:20px 10%; }
+  .member-box { width:70%; margin: 0 auto; }
 }
