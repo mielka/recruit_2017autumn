@@ -183,15 +183,20 @@ a.entry:hover { color: #FFFFFF; background-color:gray; }
     flex-wrap: wrap;
     letter-spacing:2px;
 }
-
 .member {
-    width: 22.5%;
-    margin-right: 3.33%;
-    margin-left: 3.33%;
-    color: #000;
-    margin-bottom: 40px;
+    display: inline-block;
+    text-decoration: none;
+    padding: 16px;
+    margin-right: 2%;
+    margin-left: 2%;
+    width: 25.2%;
+    color: #333;
+    opacity: 1;
+    cursor: pointer;
+    transition: 0.25s ease;
+    background: #fff;
+    border:solid 1.5px #fff;
 }
-
 .btn:hover,
 .member:hover { opacity: 0.6; }
 .member img { width: 90%; }
